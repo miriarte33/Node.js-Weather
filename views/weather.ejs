@@ -1,0 +1,12 @@
+<% if (weather.sys) { %>
+	<h2> <%= weather.name %>, <%= weather.sys.country %> </h2>
+<% } %>
+<ul>
+	<% if (weather.err) { %>
+		<li><%= weather.err %></li>
+	<% } else { %>
+		<li>Temperature: <%= weather.main.temp %> </li>
+		<li>High: <%= weather.main.temp_max %> </li>
+		<li>Low: <%= weather.main.temp_min %> </li>
+	<% } %>
+</ul>
