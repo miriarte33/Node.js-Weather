@@ -6,9 +6,9 @@
 	</head>
 	<body>
 		<h1><%= title %></h1>
-		<p>Welcome to <%= title %></p>
 		<form action='/' method='post'>
-			<input name='city' type='text' placeholder='City' required>
+			<label for='city'>Enter a city name</label>
+			<input id='city' name='city' type='text' placeholder='New York' required>
 			<input type='submit'>
 		</form>
 		<% if (weather) { %>

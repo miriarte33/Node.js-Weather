@@ -1,8 +1,25 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 35px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #66d1ff;
+  text-align: center;
 }
 
-a {
-  color: #00B7FF;
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form label {
+	white-space: nowrap;
+}
+
+form input {
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 150px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none; 
 }

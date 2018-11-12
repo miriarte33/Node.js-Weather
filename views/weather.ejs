@@ -1,7 +1,8 @@
-<% if (weather.sys) { %>
-	<h2> <%= weather.name %>, <%= weather.sys.country %> </h2>
-<% } %>
 <ul>
+	<% if (weather.sys) { %>
+		<h2> <%= weather.name %>, <%= weather.sys.country %> </h2>
+	<% } %>
+
 	<% if (weather.err) { %>
 		<li><%= weather.err %></li>
 	<% } else { %>
